@@ -32,12 +32,26 @@
         gap: 1.5vw;
     }
 
+    .filler-black {
+        width: 100%;
+        background-color: black;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        padding: 1rem;
+    }
+
+    .waiting-text {
+        color: white;
+    }
+    
 </style>
 
 <Titlepage titleName="Leaderboards" description="Players of the GDPH Demon List" />
 <div class="leaderboards-container">
     {#await getPlayers()}
-        <p> Fetching players ... </p>
+        <p class="waiting-text"> Fetching players ... </p>
+        <div class="filler-black"></div>
     {:then data}
         {#each data as player, index}
             <Player playerName={player.player_name} playerRank={index + 1} playerPoints={player.total_points} />
