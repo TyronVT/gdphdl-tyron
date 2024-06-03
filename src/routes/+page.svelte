@@ -10,6 +10,10 @@
     * {
         font-family: 'Outfit';
     }
+    :global(body) {
+        margin: 0;
+        padding: 0;
+    }
 
     /* .title-supporting-text {
         text-align: center;
