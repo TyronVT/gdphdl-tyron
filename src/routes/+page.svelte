@@ -13,6 +13,7 @@
     :global(body) {
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
 
     /* .title-supporting-text {

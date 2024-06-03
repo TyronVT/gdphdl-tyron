@@ -16,7 +16,7 @@
         flex-direction: column;
         width: 100vw;
         height: 20%;
-        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://getwallpapers.com/wallpaper/full/5/c/5/1019065-popular-geometry-dash-wallpapers-1920x1080.jpg");
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../lib/titlepage_background.png");
         background-size: auto;
         background-position: center;
         padding-top: 5%;
