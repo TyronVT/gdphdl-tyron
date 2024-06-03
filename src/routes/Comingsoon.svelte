@@ -5,7 +5,7 @@
         background-color: black;
         text-align: center;
     }
-    h1, h2, h3, p {
+    h1, h3, p {
         color: white;
     }
     p {
