@@ -66,6 +66,57 @@
     .level-buttons > button:active {
         transform: translateY(5px);
     }
+    
+    @media (max-width: 480px) {
+        h3 {
+            font-size: 4vw;
+        }
+
+        p {
+            font-size: 4vw;
+        }
+
+        .level-container {
+            width: 90vw;
+            border: 2px solid white;
+            opacity: 0.8;
+            border-radius: 0.7rem;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .level-information-container {
+            display: flex;          
+            justify-content: space-between;
+            padding: 5vw;
+        }
+
+        .level-buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: right;
+        }
+
+        .level-information {
+            width: 20vw;
+        }
+        .level-buttons > button {
+            background: none;
+            border: 2px solid white;
+            color: white;
+            font-size: 4vw;
+            padding: 0.8rem;
+            transition: all 0.25s ease-in-out;
+        }
+        .level-buttons > button:hover {
+            color: black;
+            border: 2px solid #ccc;
+            box-shadow: inset 9em 0 0 0 white;
+        }
+        .level-buttons > button:active {
+            transform: translateY(5px);
+        }
+    }
 </style>
 
 <div class="level-container" style="border-style: {levelBorderStyle}" transition:fade|global="{{duration: 300, delay: 0}}">

@@ -44,7 +44,6 @@
     .waiting-text {
         color: white;
     }
-    
 </style>
 
 <Titlepage titleName="Leaderboards" description="Players of the GDPH Demon List" />

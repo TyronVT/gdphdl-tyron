@@ -28,7 +28,7 @@
         font-family: 'Outfit', sans-serif;
     }
     .player-container {
-        width: 60vw;
+        width: 50vw;
         border: 2px solid white;
         transition: all 0.5s ease-in-out;
     }
@@ -61,6 +61,41 @@
         font-size: 1.1rem;
     }
 
+    @media (max-width: 480px) {
+        .player-container {
+            width: 90vw;
+            border: 2px solid white;
+            transition: all 0.5s ease-in-out;
+        }
+        .player-top-half {
+            display: flex;
+            width: inherit;
+            opacity: 0.8;
+            border-radius: 0.7rem;
+        }
+        .player-rank, .player-information, .player-buttons {
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+        }
+        .player-buttons > button {
+            background-color: transparent;
+            color: white;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-bottom: 2px solid white;
+        }
+
+        h2, h3 {
+            color: #fff;
+            font-size: 3vw;
+        }
+
+        button {
+            font-size: 3vw;
+        }
+    }
 </style>
 
 <div class="player-container" style="border-style: {playerBorderStyle}">
