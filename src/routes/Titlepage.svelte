@@ -14,7 +14,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100vw;
+        width: 100dvw;
         height: 20%;
         background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../lib/titlepage_background.png");
         background-size: auto;

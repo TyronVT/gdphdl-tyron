@@ -61,7 +61,7 @@
     .level-buttons > button:hover {
         color: black;
         border: 2px solid #ccc;
-        box-shadow: inset 8em 0 0 0 white;
+        box-shadow: inset 9em 0 0 0 white;
     }
     .level-buttons > button:active {
         transform: translateY(5px);
