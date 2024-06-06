@@ -2,7 +2,7 @@ import Pocketbase from "pocketbase"
 import { serializeNonPOJOs } from "./lib/utils"
 
 export const handle = async ({ event, resolve }) => {
-    event.locals.pb = new Pocketbase('http://127.0.0.1:8090');
+    event.locals.pb = new Pocketbase('https://gdph-demons.pockethost.io/');
     event.locals.pb.authStore.loadFromCookie(event.request.headers.get('cookie') || '')
 
     if (event.locals.pb.authStore.isValid) {
