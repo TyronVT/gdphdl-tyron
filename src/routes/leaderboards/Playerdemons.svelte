@@ -80,7 +80,7 @@
 
 <div class="player-demons">
     {#await demonData}
-        <p>Fetching Player Demons ...</p>
+        <p transition:slide|global="{{duration: 200, delay: 10}}">Fetching Player Demons ...</p>
     {:then data}
         <div class="demon-selector">
             <button on:click={() => selectedCategory = "Main Demons"} transition:slide|global="{{duration: 200, delay: 10}}">Main Demons</button>
@@ -90,12 +90,12 @@
         </div>
 
         <div class="demons-container">
-            <h1 transition:slide>{selectedCategory}</h1>
+            <h1 transition:slide|global="{{duration: 200, delay: 10}}">{selectedCategory}</h1>
             {#each data[selectedCategory] as demon, index (demon)}
                 {#if selectedCategory != "In Progress"}
                     <p transition:slide|global="{{duration: 200, delay: index*10}}">{demon.level_name}</p>
                 {:else}
-                    <p transition:slide|global="{{duration: 200, delay: index*10}}">{demon.level_name}, {demon.percent_completed}</p>
+                    <p transition:slide|global="{{duration: 200, delay: index*10}}">{demon.level_name}, {demon.percent_completed}%</p>
                 {/if}
             {/each}
         </div>

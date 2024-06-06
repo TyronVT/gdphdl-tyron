@@ -10,6 +10,11 @@
 * {
     font-family: 'Outfit';
 }
+
+a {
+    text-decoration: none;
+}
+
 .menu-container-mobile {
     display: flex;
     justify-content: space-between;
@@ -213,6 +218,10 @@ p {
         <div class="menu-button">
             <a href="/"><p>About Us</p></a>
         </div>
+
+        <div class="menu-button">
+            <a href="/login"><p>Sign In</p></a>
+        </div>
     </div>
 </div>
 
@@ -244,6 +253,10 @@ p {
         
         <div class="menu-button">
             <a href="/"><p>About Us</p></a>
+        </div>
+
+        <div class="menu-button">
+            <a href="/login"><p>Sign In</p></a>
         </div>
     </div>
 </div>
