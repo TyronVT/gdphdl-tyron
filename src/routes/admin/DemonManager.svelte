@@ -3,7 +3,7 @@
     import Pocketbase from "pocketbase";
     import { onMount } from 'svelte';
     import { flip } from 'svelte/animate';
-    const pb = new Pocketbase("http://127.0.0.1:8090");
+    const pb = new Pocketbase("https://gdph-demons.pockethost.io");
 
     async function getPlayers() {
         const records = await pb.collection("level_ranks_and_points").getFullList();
